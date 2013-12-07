@@ -1,5 +1,8 @@
 Jouvea::Application.routes.draw do
   resources :users
+  resources :students
+  resources :parents
+  resources :teachers
 
   resources :classrooms
 
