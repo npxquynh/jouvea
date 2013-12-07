@@ -23,6 +23,11 @@ ActiveRecord::Schema.define(version: 20131207144027) do
     t.datetime "updated_at"
   end
 
+  create_table "classrooms_users", force: true do |t|
+    t.integer "classroom_id"
+    t.integer "user_id"
+  end
+
   create_table "users", force: true do |t|
     t.string   "name"
     t.string   "type"

@@ -25,6 +25,13 @@
   <%= link_to 'Sign up', new_user_registration_path %>
   </li>
 <% end %>
+  <h1>
+    Navigation
+  </h1>
+  <%= link_to "Classroom", classrooms_path() %>
+  <%= link_to "User", users_path() %>
+
+
 <%= yield %>
 
 </body>
